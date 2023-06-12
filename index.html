@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Counter Application</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.0/redux.min.js"
+      integrity="sha512-1/8Tj23BRrWnKZXeBruk6wTnsMJbi/lJsk9bsRgVwb6j5q39n0A00gFjbCTaDo5l5XrPVv4DZXftrJExhRF/Ug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body class="bg-gray-100">
+    <div class="container w-screen p-10 text-slate-700">
+      <!-- header -->
+      <h1 class="max-w-md mx-auto text-center text-2xl font-bold">
+        Multi Counter Application
+      </h1>
+
+      <!-- counters -->
+      <div class="max-w-md mx-auto mt-10 space-y-5">
+        <div id="container" class="space-y-5"></div>
+        <div class="h-auto bg-transparent flex justify-end">
+          <div class="flex space-x-3">
+            <button id="addcounter" class="bg-indigo-400 text-white px-3 py-2 rounded shadow">
+              + Add Counter
+            </button>
+            <button id="reset" class="bg-red-400 text-white px-3 py-2 rounded shadow">
+              Reset
+            </button>
+          </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
